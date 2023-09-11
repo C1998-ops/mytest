@@ -20,8 +20,8 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <span>{count}</span>
-        <button onClick={handleClick}>adding</button>
-        <button onClick={handleSubmit}>subtraction</button>
+        <button onClick={handleClick} className="btn_count">adding</button>
+        <button onClick={handleSubmit} className="btn_count">subtraction</button>
         <a
           className="App-link"
           href="https://reactjs.org"
