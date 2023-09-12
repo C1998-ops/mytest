@@ -1,7 +1,6 @@
 import logo from "./logo.svg";
 import "./App.css";
 import React, { useMemo, useState } from "react";
-
 function App() {
   const [count, setCount] = useState(0);
   const handleClick = useMemo(() => {
@@ -14,23 +13,29 @@ function App() {
       setCount(count - 1);
     }
   };
-
+const Header=()=>{
+  return (
+    <div className="header_div">
+      <header className="header_wrap">
+        <ul className="header_lists">
+          <li>a</li>
+          <li>b</li>
+          <li>c</li>
+        </ul>
+      </header>
+    </div>
+  )
+}
   return (
     <div className="App">
-      <header className="App-header">
+        <Header/>
+      <main className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <span>{count}</span>
         <button onClick={handleClick} className="btn_count">adding</button>
         <button onClick={handleSubmit} className="btn_count">subtraction</button>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+        </main>
     </div>
   );
 }

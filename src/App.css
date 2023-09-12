@@ -45,3 +45,34 @@
   align-items: center;
   cursor: pointer;
 }
+.header_div {
+  height: 60px;
+  position: relative;
+  padding: 0;
+  margin: auto;
+  width: 100%;
+  min-width: 100%;
+  background-color: skyblue;
+}
+.header_wrap{
+  display: block;
+} 
+.header_lists {
+  display: flex;
+  flex-direction: row;
+  justify-items: flex-end;
+  width: 100%;
+  float: right;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 100px;
+  list-style: none;
+}
+.header_lists > li{
+  font-weight: 600;
+  font-size: 15px;
+  text-transform: capitalize;
+  color: white;
+  cursor: pointer;
+}
